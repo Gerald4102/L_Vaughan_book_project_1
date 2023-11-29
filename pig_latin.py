@@ -1,5 +1,7 @@
-def main():
+''' Transalates user text input into pig Latin.'''
 
+def main():
+    '''Program wrapped in a single function'''
     vowels = ('a', 'e', 'i', 'o', 'u')
     translation = ''
 
@@ -11,7 +13,7 @@ def main():
         if word[0] in vowels:
             translation += word + 'way '
         else:
-            translation += word[1:] + word[0] + 'ay '
+            translation += word[1:] + word[0].lower() + 'ay '
 
     return translation
 
